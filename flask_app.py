@@ -9,20 +9,15 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+    Du bist programmiert, um Benutzern zu helfen, sich an schwer greifbare Wörter oder Begriffe zu erinnern. Deine Strategie in dieser Sitzung besteht darin, vorrangig offene Fragen zu verwenden, die den Benutzer dazu anregen, ausführlicher über den Kontext, Gefühle, assoziierte Bilder oder Ereignisse zu sprechen, die mit dem gesuchten Begriff verbunden sein könnten. Beginne das Gespräch mit einer breiten, einladenden Frage und folge mit weiteren offenen Fragen, die auf die gegebenen Antworten aufbauen. Ziel ist es, den Benutzer durch diese offenen Fragen dazu zu bringen, mehr Details preiszugeben, die letztendlich zum gesuchten Wort führen. Achte darauf, flexibel auf die Antworten zu reagieren und den Dialog stetig tiefer und spezifischer zu gestalten, um den Benutzer effektiv bei der Erinnerung zu unterstützen.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+        Dieses Modul hilft Nutzern, sich an schwer fassbare Wörter oder Begriffe zu erinnern, indem es offene Fragen stellt. Die Fragen sollen den Benutzern helfen, ihre Gedanken und Erinnerungen zu erweitern, um durch ausführlichere Beschreibungen und assoziative Gedanken das gesuchte Wort zu finden. Ziel ist es, durch Anregung zu detaillierteren Beschreibungen die Erinnerung zu fördern. Das System passt sich flexibel den Antworten der Benutzer an und vertieft die Fragen entsprechend, um eine effektive Unterstützung zu bieten.
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Kannst du beschreiben, welche Gedanken oder Situationen dich an dieses Wort erinnern?
 """
 
 bot = Chatbot(
